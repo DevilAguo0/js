@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apple ID Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+      .container {
+        margin-top: 50px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #007aff;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-control {
+        border-radius: 5px;
+      }
+      .btn {
+        border-radius: 5px;
+        background-color: #007aff;
+        border-color: #007aff;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+      .form-check-label {
+        color: #007aff;
+      }
+      .form-check-input {
+        margin-right: 10px;
+      }
+      .form-check {
+        margin-bottom: 20px;
+      }
+      .navbar {
+        background-color: #007aff;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+      .navbar a {
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 20px;
+        color: white;
+      }
+      .navbar a:hover {
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+      .dropdown-menu a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Apple ID Login</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="Enter password"
+          />
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" /> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Forgot password?</p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-right">Don't have an account?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#">Reset here</a>
+          </div>
+          <div class="col-md-6">
+            <a href="#" class="text-right">Register now</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <nav class="navbar">
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Language
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">English</a>
+          <a class="dropdown-item" href="#">中文</a>
+          <a class="dropdown-item" href="#">Español</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
